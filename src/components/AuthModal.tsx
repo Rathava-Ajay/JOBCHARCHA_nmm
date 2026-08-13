@@ -70,10 +70,10 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, user, set
             <ShieldCheck className="w-6 h-6" />
           </div>
           <h3 className="text-xl sm:text-2xl font-heading font-extrabold text-slate-900">
-            {authMode === 'login' ? 'Portal Account Login' : authMode === 'register' ? 'Create Portal Account' : 'Reset Password'}
+            {authMode === 'login' ? 'JobCharcha Account Login' : authMode === 'register' ? 'Join JobCharcha Portal' : 'Reset Password'}
           </h3>
           <p className="text-xs text-slate-500 mt-1">
-            Access customized tools for Job Seekers, Employers & Platform Admins.
+            Access customized Gujarat & India Job Alerts, OJAS Call Letters, and CBT Tests.
           </p>
         </div>
 

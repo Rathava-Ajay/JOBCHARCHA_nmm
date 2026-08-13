@@ -1,6 +1,6 @@
 {
-  "name": "NaukriExams - Government Jobs & Exam Portal",
-  "description": "Comprehensive high-conversion landing portal for Government Jobs, Admit Cards, Results, Mock Tests, Cutoff Predictor, Previous Papers, and Subscriptions.",
+  "name": "JobCharcha - Govt Jobs, OJAS, Admit Cards & Results",
+  "description": "JobCharcha.com - Premier portal for Gujarat Government Jobs, OJAS updates, GPSC, GSSSB, Police Bharti, Admit Cards, Results, Study Material, and Mock Tests.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

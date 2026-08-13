@@ -40,24 +40,30 @@ export const Footer: React.FC = () => {
   };
 
   const popularDistricts = [
-    'New Delhi', 'Mumbai', 'Bengaluru Urban', 'Lucknow', 'Patna', 
-    'Kolkata', 'Chennai', 'Hyderabad', 'Jaipur', 'Ahmedabad',
-    'Chandigarh', 'Bhopal', 'Ranchi', 'Dehradun', 'Guwahati'
+    'Ahmedabad', 'Gandhinagar', 'Surat', 'Vadodara', 'Rajkot', 
+    'Bhavnagar', 'Junagadh', 'Anand', 'Mehsana', 'Jamnagar',
+    'New Delhi', 'Mumbai', 'Lucknow', 'Patna', 'Jaipur'
   ];
 
   return (
     <footer className="bg-slate-950 text-slate-400 text-xs border-t border-slate-800 pt-12 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
+        {/* Top Disclaimer Banner for JobCharcha.com */}
+        <div className="bg-amber-500/10 border border-amber-500/30 rounded-2xl p-4 mb-8 text-[11px] text-amber-300 leading-relaxed">
+          <span className="font-bold text-amber-400 block mb-1">📢 JobCharcha.com Official Disclaimer & Information Policy:</span>
+          JobCharcha.com is an independent educational and recruitment information portal. We are NOT affiliated with OJAS, GPSC, GSSSB, Gujarat Police, or any government department. Job notifications, admit cards, and results published here are sourced from official recruitment websites (like ojas.gujarat.gov.in, gpsc.gujarat.gov.in) for quick public guidance. Candidates must verify all details on official portals before applying.
+        </div>
+
         {/* Top Newsletter Sub Box */}
         <div className="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 mb-12 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="max-w-xl">
             <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded">
               Direct In-App & Email Push Notifications
             </span>
-            <h3 className="text-xl font-black text-white mt-2">Get Instant Daily Job & Exam Notification Alerts</h3>
+            <h3 className="text-xl font-black text-white mt-2">Get Instant Daily Job & Exam Alerts on JobCharcha</h3>
             <p className="text-xs text-slate-400 mt-1">
-              Join over 2.4 million candidates receiving verified central and state vacancy updates directly to their inbox.
+              Join over 2.4 million candidates receiving verified OJAS, GPSC, GSSSB, Police Bharti, and central government vacancy updates directly to their inbox.
             </p>
           </div>
 
@@ -90,7 +96,7 @@ export const Footer: React.FC = () => {
         {/* District & Location Links Grid */}
         <div className="mb-10 pb-8 border-b border-slate-800/80">
           <span className="text-[10px] uppercase font-bold text-slate-400 tracking-wider block mb-3">
-            District-wise & Location Based Job Search Directory:
+            District-wise Gujarat & All India Job Search Directory:
           </span>
           <div className="flex flex-wrap gap-2 text-[11px]">
             {popularDistricts.map((dist) => (
@@ -112,16 +118,16 @@ export const Footer: React.FC = () => {
           <div className="space-y-3">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 rounded-lg bg-emerald-500 text-slate-950 font-black text-lg flex items-center justify-center">
-                N
+                J
               </div>
-              <span className="text-lg font-black text-white tracking-tight">NaukriExams</span>
+              <span className="text-lg font-black text-white tracking-tight">JobCharcha.com</span>
             </div>
             <p className="text-slate-400 text-xs leading-relaxed">
-              India's comprehensive portal for public & private recruitment, CBT mock test series, official admit card downloads, and cutoff analytics.
+              Gujarat's premier portal for OJAS government jobs, GPSC, GSSSB, Police Bharti, admit cards, results, mock tests, and study guides in Gujarati and English.
             </p>
             <div className="text-[11px] text-slate-500 space-y-1">
-              <div>Email: support@naukriexams.gov</div>
-              <div>Phone: 1800-110-GOV (Toll Free)</div>
+              <div>Email: support@jobcharcha.com</div>
+              <div>Phone: 1800-110-JOBS (Toll Free)</div>
             </div>
           </div>
 
@@ -129,11 +135,11 @@ export const Footer: React.FC = () => {
           <div>
             <h4 className="font-bold text-white uppercase tracking-wider text-[11px] mb-3">Exams & Syllabus</h4>
             <ul className="space-y-2 text-xs">
-              <li><a href="#" className="hover:text-white transition-colors">SSC CGL / CHSL Syllabus 2026</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">UPSC Civil Services Prelims GS-1</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">IBPS PO & Clerk Question Bank</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Railway RRB NTPC Exam Calendar</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Defense CDS / NDA Entrance Papers</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">OJAS Gujarat Job Updates</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">GPSC Class 1-2 Exam Syllabus</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Gujarat Police Constable & PSI Papers</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">GSSSB CCE & Revenue Talati Guide</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">SSC & Railway NTPC Mock Tests</a></li>
             </ul>
           </div>
 
@@ -141,11 +147,11 @@ export const Footer: React.FC = () => {
           <div>
             <h4 className="font-bold text-white uppercase tracking-wider text-[11px] mb-3">Information Pages</h4>
             <ul className="space-y-2 text-xs">
-              <li><a href="#" className="hover:text-white transition-colors">About NaukriExams Portal</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Privacy Policy & Cloudflare R2 Storage</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Terms & Conditions</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Employer Job Posting Rules</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">XML Sitemap & SEO Index</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">About JobCharcha.com</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Privacy Policy & Storage</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Terms of Service</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">OJAS Application Guide (ગુજરાતી)</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Sitemap & Feed Index</a></li>
             </ul>
           </div>
 
@@ -204,7 +210,7 @@ export const Footer: React.FC = () => {
 
         {/* Copyright Bar */}
         <div className="pt-6 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 gap-2">
-          <div>© 2026 NaukriExams Portal. All rights reserved. Non-government independent education platform.</div>
+          <div>© 2026 JobCharcha.com Portal. All rights reserved. Independent Gujarat & All India recruitment portal.</div>
           <div className="flex gap-4">
             <span>Secure SSL Encrypted</span>
             <span>Cloudflare R2 Storage</span>

@@ -2,6 +2,64 @@ import { Job, AdmitCard, ExamResult, MockTest, OldPaper, GovtScheme, NewsPost, P
 
 export const INITIAL_JOBS: Job[] = [
   {
+    id: 'job-0a',
+    title: 'GSSSB Revenue Talati & Junior Clerk CCE 2026 (OJAS Gujarat)',
+    companyOrDept: 'Gujarat Subordinate Service Selection Board (GSSSB / OJAS)',
+    category: 'Talati',
+    location: 'Gujarat (All 33 Districts)',
+    district: 'Gandhinagar',
+    vacancyCount: 5200,
+    salary: '₹26,000 Fix Pay + Allowances',
+    qualification: '12th Pass / Graduate (Any Discipline) with CCC Computer Certificate',
+    type: 'public',
+    lastDate: '2026-09-20',
+    postedDate: '2026-08-11',
+    isBoosted: true,
+    isFeatured: true,
+    isUrgent: true,
+    tags: ['OJAS Gujarat', 'Talati Bharti', 'GSSSB CCE', '12th Pass Job'],
+    officialNotificationUrl: 'https://ojas.gujarat.gov.in',
+    applyUrl: 'https://ojas.gujarat.gov.in'
+  },
+  {
+    id: 'job-0b',
+    title: 'GPSC Gujarat Administrative Service Class 1 & 2 Recruitment 2026',
+    companyOrDept: 'Gujarat Public Service Commission (GPSC)',
+    category: 'GPSC',
+    location: 'Gujarat (Statewide)',
+    district: 'Gandhinagar',
+    vacancyCount: 388,
+    salary: '₹56,100 - ₹1,77,500 (Pay Level 10)',
+    qualification: 'Bachelor Degree in Any Stream from Recognized University',
+    type: 'public',
+    lastDate: '2026-09-25',
+    postedDate: '2026-08-10',
+    isBoosted: true,
+    isFeatured: true,
+    tags: ['GPSC Class 1-2', 'GAS Officer', 'DySP / Mamlatdar', 'Gazetted Post'],
+    officialNotificationUrl: 'https://gpsc.gujarat.gov.in',
+    applyUrl: 'https://gpsc.gujarat.gov.in'
+  },
+  {
+    id: 'job-0c',
+    title: 'Gujarat Police Constable & Unarmed PSI Bharti 2026 (12,472 Posts)',
+    companyOrDept: 'Gujarat Police Recruitment Board (LRD / PSI Board)',
+    category: 'Police',
+    location: 'Gujarat Police Headquarters',
+    district: 'Ahmedabad',
+    vacancyCount: 12472,
+    salary: '₹26,000 - ₹38,000 / month',
+    qualification: '12th Pass (Constable) / Graduate (Unarmed PSI)',
+    type: 'public',
+    lastDate: '2026-09-30',
+    postedDate: '2026-08-09',
+    isBoosted: true,
+    isUrgent: true,
+    tags: ['Gujarat Police Bharti', 'Lokrakshak LRD', 'Unarmed PSI', 'Physical Fitness'],
+    officialNotificationUrl: 'https://ojas.gujarat.gov.in',
+    applyUrl: 'https://ojas.gujarat.gov.in'
+  },
+  {
     id: 'job-1',
     title: 'SSC CGL 2026 Assistant Section Officer & Inspector Posts',
     companyOrDept: 'Staff Selection Commission (SSC)',
@@ -112,6 +170,28 @@ export const INITIAL_JOBS: Job[] = [
 ];
 
 export const INITIAL_ADMIT_CARDS: AdmitCard[] = [
+  {
+    id: 'ac-0a',
+    examName: 'GSSSB Revenue Talati & Junior Clerk CCE Hall Ticket 2026',
+    organization: 'OJAS Gujarat / GSSSB Board',
+    releaseDate: '2026-08-12',
+    examDate: '2026-08-28',
+    downloadUrl: 'https://ojas.gujarat.gov.in',
+    status: 'Released',
+    category: 'Talati',
+    downloadsCount: 148500
+  },
+  {
+    id: 'ac-0b',
+    examName: 'GPSC Class 1-2 Prelims Call Letter / Hall Ticket',
+    organization: 'Gujarat Public Service Commission',
+    releaseDate: '2026-08-11',
+    examDate: '2026-09-05',
+    downloadUrl: 'https://gpsc.gujarat.gov.in',
+    status: 'Released',
+    category: 'GPSC',
+    downloadsCount: 92400
+  },
   {
     id: 'ac-1',
     examName: 'SSC CHSL Tier-II Computer Based Examination 2026',

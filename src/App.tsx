@@ -68,35 +68,35 @@ export default function App() {
 
   // Dynamic SEO & Meta Tags Injector for Search Ranking & Social Previews
   useEffect(() => {
-    let title = "NaukriExams - Verified Government & Private Job Vacancies 2026";
-    let description = "Latest Central & State government job notifications, admit cards, results, CBT mock tests, and youth schemes across India.";
+    let title = "JobCharcha.com - Gujarat & India Govt Jobs, OJAS, Admit Cards & Results";
+    let description = "JobCharcha.com provides latest Gujarat Government jobs, OJAS updates, GPSC, GSSSB, Police Bharti, admit cards, results, and mock tests.";
 
     if (selectedJob) {
-      title = `${selectedJob.title} - ${selectedJob.vacancyCount} Vacancies | NaukriExams`;
+      title = `${selectedJob.title} - ${selectedJob.vacancyCount} Vacancies | JobCharcha.com`;
       description = `Apply for ${selectedJob.title} at ${selectedJob.companyOrDept}. Salary: ${selectedJob.salary}. Qualification: ${selectedJob.qualification}. Last Date: ${selectedJob.lastDate}.`;
     } else if (selectedMockTest) {
-      title = `${selectedMockTest.title} - Free CBT Test Series | NaukriExams`;
+      title = `${selectedMockTest.title} - Free Mock Test | JobCharcha.com`;
       description = `Attempt official pattern online mock test for ${selectedMockTest.title}. ${selectedMockTest.totalQuestions} Questions, ${selectedMockTest.durationMinutes} Mins.`;
     } else if (activeTab === 'jobs') {
-      title = "Government & Private Job Vacancies 2026 - Instant Alerts | NaukriExams";
-      description = "Browse verified UPSC, SSC, Banking, Railway, Defense and State PSC recruitment notices with official notification PDFs.";
+      title = "Gujarat Govt Jobs & OJAS Vacancies 2026 | JobCharcha.com";
+      description = "Browse verified GPSC, GSSSB, OJAS Gujarat, Police Bharti, SSC, Railway, and Bank recruitment notices.";
     } else if (activeTab === 'exams') {
-      title = "Hall Tickets, Exam Results & AI Cutoff Predictor 2026 | NaukriExams";
-      description = "Download official admit cards, merit lists, cutoff marks, and check AI probability for SSC, Banking, and UPSC exams.";
+      title = "Hall Tickets, Exam Results & OJAS Cutoff Marks | JobCharcha.com";
+      description = "Download official OJAS & GPSC admit cards, exam results, merit lists, and category cutoff marks.";
     } else if (activeTab === 'mocktests') {
-      title = "Free CBT Mock Tests, Daily Speed Quizzes & Solved Archives | NaukriExams";
-      description = "Practice online CBT mock tests with instant score evaluation, daily 3-minute quizzes, and past 10-year solved papers.";
+      title = "Free CBT Mock Tests & GPSC Model Question Papers | JobCharcha.com";
+      description = "Practice online CBT mock tests with instant score evaluation, daily Gujarati quizzes, and solved archives.";
     } else if (activeTab === 'schemes') {
-      title = "Government Youth Welfare Schemes & Exam Notifications 2026 | NaukriExams";
-      description = "Explore Central and State welfare initiatives, skill development grants, and exam policy updates.";
+      title = "Government Youth Welfare Schemes & OJAS Updates | JobCharcha.com";
+      description = "Explore Gujarat and Central youth welfare initiatives, skill development grants, and exam policy updates.";
     } else if (activeTab === 'pricing') {
-      title = "Pass Pro Unlimited Access & Employer Postings | NaukriExams";
+      title = "JobCharcha Pass Pro & Employer Postings | JobCharcha.com";
       description = "Unlock 500+ CBT test series, unlimited resume downloads, and priority recruitment tools.";
     } else if (activeTab === 'referral') {
-      title = "Invite Aspirants & Earn Wallet Credits | NaukriExams";
-      description = "Share your referral code and earn ₹200 instant wallet bonus for every candidate who joins.";
+      title = "Invite Aspirants & Earn Wallet Credits | JobCharcha.com";
+      description = "Share your referral code and earn ₹200 instant wallet bonus for every candidate who joins JobCharcha.";
     } else if (activeTab === 'admin') {
-      title = "Employer Studio & Admin Analytics Dashboard | NaukriExams";
+      title = "Admin Analytics & Job Control Studio | JobCharcha.com";
       description = "Manage job listings, view application conversion analytics, and broadcast automated job alerts.";
     }
 
@@ -117,7 +117,7 @@ export default function App() {
     setMetaTag('meta[name="description"]', 'name', 'description', description);
     setMetaTag('meta[property="og:title"]', 'property', 'og:title', title);
     setMetaTag('meta[property="og:description"]', 'property', 'og:description', description);
-    setMetaTag('meta[property="og:site_name"]', 'property', 'og:site_name', 'NaukriExams Portal');
+    setMetaTag('meta[property="og:site_name"]', 'property', 'og:site_name', 'JobCharcha.com Portal');
     setMetaTag('meta[property="og:type"]', 'property', 'og:type', selectedJob ? 'article' : 'website');
     setMetaTag('meta[name="twitter:title"]', 'name', 'twitter:title', title);
     setMetaTag('meta[name="twitter:description"]', 'name', 'twitter:description', description);
