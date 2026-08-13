@@ -36,12 +36,14 @@ export const ECommerceMarketplaceSection: React.FC<ECommerceMarketplaceSectionPr
   // Selected product modal
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
-  const categories = ['All', 'Books', 'Test Series', 'Video Courses', 'Class Notes'];
+  const categories = ['All', 'Books', 'Test Series', 'Video Courses', 'Class Notes', 'GPSC', 'Police', 'Talati'];
+  const [pricingType, setPricingType] = useState<'All' | 'Free' | 'Paid'>('All');
 
   const filteredProducts = products.filter((p) => {
     const matchesCategory = activeCategory === 'All' || p.category === activeCategory;
     const matchesSearch = p.title.toLowerCase().includes(searchQuery.toLowerCase()) || p.description.toLowerCase().includes(searchQuery.toLowerCase());
-    return matchesCategory && matchesSearch;
+    const matchesPricing = pricingType === 'All' ? true : pricingType === 'Free' ? (p.isFree || p.price === 0) : (!p.isFree && p.price > 0);
+    return matchesCategory && matchesSearch && matchesPricing;
   });
 
   const addToCart = (product: Product) => {
