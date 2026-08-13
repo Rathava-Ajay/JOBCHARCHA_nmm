@@ -89,14 +89,14 @@ export const Navbar: React.FC<NavbarProps> = ({
           <div className="flex items-center gap-6">
             <a href="#" className="flex items-center gap-3 group">
               <div className="w-11 h-11 bg-gradient-to-tr from-emerald-600 to-teal-500 rounded-2xl text-white flex items-center justify-center font-heading font-black text-2xl shadow-md shadow-emerald-500/20 group-hover:scale-105 transition-transform">
-                J
+                N
               </div>
               <div>
                 <span className="text-2xl font-heading font-extrabold tracking-tight text-slate-900 block leading-none">
-                  Job<span className="text-emerald-600">Charcha</span>
+                  Naukri<span className="text-emerald-600">Exams</span>
                 </span>
                 <span className="text-[11px] font-semibold text-slate-500 block mt-1">
-                  JobCharcha.com • OJAS & Govt Jobs
+                  Verified Govt Job Portal
                 </span>
               </div>
             </a>

@@ -27,6 +27,7 @@ interface HeroSectionProps {
   onOpenCutoffPredictor: () => void;
   onOpenQuickQuiz: () => void;
   onSelectTab: (tabId: string) => void;
+  onSwitchTo3D?: () => void;
 }
 
 export const HeroSection: React.FC<HeroSectionProps> = ({
@@ -41,16 +42,17 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   onOpenCutoffPredictor,
   onOpenQuickQuiz,
   onSelectTab,
+  onSwitchTo3D,
 }) => {
   const categories = [
     { id: 'All', label: 'All Portals' },
-    { id: 'GPSC', label: 'GPSC Class 1-2-3' },
-    { id: 'Police', label: 'Police Bharti (PSI/Constable)' },
-    { id: 'Talati', label: 'Talati & GSSSB CCE' },
     { id: 'UPSC', label: 'UPSC & IAS' },
     { id: 'SSC', label: 'SSC CGL/CHSL' },
     { id: 'Banking', label: 'Banking & IBPS' },
     { id: 'Railways', label: 'Railways RRB' },
+    { id: 'Defence', label: 'Defence & Police' },
+    { id: 'PSC', label: 'State PSC' },
+    { id: 'Teaching', label: 'CTET & Teaching' }
   ];
 
   const qualifications = [
@@ -63,13 +65,14 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   ];
 
   const locations = [
-    'Gujarat / OJAS',
-    'Ahmedabad',
-    'Gandhinagar',
-    'Surat',
-    'Vadodara',
-    'Rajkot',
-    'All India / Central'
+    'All India / Central',
+    'New Delhi',
+    'Maharashtra / Mumbai',
+    'Uttar Pradesh / Lucknow',
+    'Bihar / Patna',
+    'Rajasthan / Jaipur',
+    'Gujarat / Ahmedabad',
+    'Karnataka / Bengaluru'
   ];
 
   return (
@@ -84,13 +87,13 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             <div>
               <div className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 px-3 py-1 rounded-full text-xs font-semibold mb-4">
                 <Sparkles className="w-3.5 h-3.5" />
-                <span>JobCharcha.com • Gujarat Govt Jobs & OJAS Updates Portal</span>
+                <span>NaukriExams • Central & State Government Recruitment 2026</span>
               </div>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-extrabold tracking-tight mb-5 text-white leading-tight">
-                Find Gujarat Govt <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400">OJAS Jobs & Exams</span> on JobCharcha
+                Verified Govt Jobs, <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400">Hall Tickets & Results</span>
               </h1>
               <p className="text-sm sm:text-base text-slate-300 max-w-xl mb-8 leading-relaxed font-normal">
-                Instant alerts for GPSC, GSSSB, OJAS Gujarat, Police Bharti, Revenue Talati, High Court, admit card downloads, cutoff analysis, and study guides in Gujarati & English.
+                Instant alerts for UPSC, SSC, Banking, Railways, Defense, State PSCs, admit card downloads, AI cutoff predictor, and solved question papers.
               </p>
             </div>
 
@@ -99,7 +102,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 onClick={() => onSelectTab('jobs')}
                 className="bg-emerald-500 hover:bg-emerald-400 text-slate-950 px-6 py-3.5 rounded-2xl text-xs font-extrabold shadow-lg shadow-emerald-500/20 transition-all active:scale-95 cursor-pointer flex items-center gap-2"
               >
-                <span>Explore Gujarat & All India Jobs</span>
+                <span>Explore All Vacancies</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
               <button
@@ -107,7 +110,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 className="bg-slate-800/80 hover:bg-slate-800 text-slate-200 border border-slate-700 px-6 py-3.5 rounded-2xl text-xs font-bold transition-colors cursor-pointer flex items-center gap-2"
               >
                 <Award className="w-4 h-4 text-emerald-400" />
-                <span>OJAS Admit Cards & Results</span>
+                <span>Admit Cards & Cutoff Predictor</span>
               </button>
             </div>
           </div>
@@ -119,16 +122,16 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             <div className="relative z-10">
               <div className="flex justify-between items-center mb-4">
                 <span className="bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider flex items-center gap-1.5">
-                  <Zap className="w-3 h-3 text-emerald-400" /> JobCharcha Live Alert
+                  <Zap className="w-3 h-3 text-emerald-400" /> NaukriExams Live Alert
                 </span>
-                <span className="text-[11px] font-mono text-slate-400 font-semibold">OJAS Portal</span>
+                <span className="text-[11px] font-mono text-slate-400 font-semibold">SSC Portal</span>
               </div>
 
               <h2 className="text-xl sm:text-2xl font-heading font-bold text-white mb-2 leading-snug">
-                GSSSB CCE & Revenue Talati Hall Ticket 2026
+                SSC CGL Tier-I Admit Card 2026
               </h2>
               <p className="text-xs text-slate-300 leading-relaxed mb-6 font-normal">
-                Official OJAS direct download link active. Check exam hall center allocation, guidelines, and download admit card PDF instantly.
+                Official regional server links active. Check exam city allocation, instructions, and download admit card PDF instantly.
               </p>
 
               <div className="bg-slate-900/80 p-3.5 rounded-2xl border border-slate-700/60 flex items-center justify-between mb-5">

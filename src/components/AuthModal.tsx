@@ -13,7 +13,9 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, user, set
   if (!isOpen) return null;
 
   const [authMode, setAuthMode] = useState<'login' | 'register' | 'forgot'>('login');
-  const [selectedRole, setSelectedRole] = useState<'aspirant' | 'employer' | 'admin'>(user.role || 'aspirant');
+  const [selectedRole, setSelectedRole] = useState<'aspirant' | 'employer' | 'admin'>(
+    user.role === 'employer' ? 'employer' : user.role === 'admin' || user.role === 'superadmin' ? 'admin' : 'aspirant'
+  );
   const [loginMethod, setLoginMethod] = useState<'otp' | 'email'>('otp');
 
   // Form Fields
